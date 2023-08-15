@@ -1,0 +1,9 @@
+.env
+/.idea
+/data/add_dataset/
+data
+/venv/
+tg_bot_dev.py
+lenet5.pth
+lenet5_new.pth
+lenet5_new_ft.pth
