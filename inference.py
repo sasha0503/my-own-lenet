@@ -27,7 +27,7 @@ if __name__ == '__main__':
     model.load_state_dict(torch.load('models/lenet5_2023-08-17_17-51-43.pth'))
     model.eval()
 
-    data_path = 'data/test.csv'
+    data_path = 'data'
     x = load_data(data_path, is_train=False)
     x = torch.from_numpy(x.astype(np.float32)).view(-1, 1, 28, 28)
     res = model(x)
