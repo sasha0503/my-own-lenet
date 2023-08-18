@@ -182,7 +182,7 @@ if __name__ == '__main__':
                 net.train()
                 if val_acc > best_val:
                     best_val = val_acc
-                    torch.save(net.state_dict(), model_name)
+                    torch.save(net.state_dict(), f'models/{model_name}')
         lr *= lr_decay ** e
         for param_group in optimizer.param_groups:
             param_group['lr'] = lr

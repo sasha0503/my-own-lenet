@@ -11,7 +11,7 @@ from lenet5 import LeNet5
 
 dotenv.load_dotenv()
 TELE_API_KEY = os.getenv('TELE_API_KEY')
-MODEL_PATH = "lenet5_new_ft.pth"
+MODEL_PATH = "models/lenet5_2023-08-17_17-51-43.pth"
 
 bot = telebot.TeleBot(TELE_API_KEY)
 model = LeNet5()

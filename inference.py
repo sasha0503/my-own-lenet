@@ -24,7 +24,7 @@ def predict(image):
 
 if __name__ == '__main__':
     model = LeNet5()
-    model.load_state_dict(torch.load('lenet5_new_ft.pth'))
+    model.load_state_dict(torch.load('models/lenet5_2023-08-17_17-51-43.pth'))
     model.eval()
 
     data_path = 'data/test.csv'
